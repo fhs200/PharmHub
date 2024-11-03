@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Courses</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../StyleSheets/CoursesStyleSheet/styleguide.css" />
+    <link rel="stylesheet" href="../StyleSheets/CoursesStyleSheet/style.css" />
+
+    <style>
+        /* Dropdown container styles */
+        .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: green;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- header class starts here -->
+    <header class="header">
+        
+        <section class="flex">
+            <div class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="active">home</a>
+                <a href="../tools/VPB.html">Virtual pillbox organizer</a>
+                <a href="../tools/forum.html">Forum</a>
+                <a href="../tools/liveChat.html">LiveChat</a>
+                <a href="../tools/adherenceTools.html">Adherence Tools</a>
+                <a href="../tools/privacyInfo.html">Privacy Information</a>
+            </nav>
+    
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+                <button class="btn" style="font-size: 2em;">Language</button>
+
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                    <a href="courses_FR.html">French</a>
+                </div>
+            </div>
+    
+            <ul>
+                <li><a href="../tools/message.html" class="btn">
+                    <img src="../Images/img/MessageBtn.png" alt="Message Button" class="button-image" style="filter: hue-rotate(180deg);">
+                </a></li>
+                <li class="dropdown">
+                    <a href="#" class="btn">
+                        <img src="../Images/img/Noti Btn.png" alt="Notification Button" class="button-image" style="filter: hue-rotate(180deg);">
+                    </a>
+                    <!-- Dropdown content for medication reminders -->
+                    <div class="dropdown-content">
+                        <a href="#">Take 1 tablet of Ibuprofen (200mg) with water at 8:00 AM.</a>
+                        
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </header>
+    
+    <!-- header class ends here -->
+
+    <div class="courses-hifi"> <!-- course page starts here-->
+
+        <!-- top bar starts here -->
+        <div class="top-bar">
+            <a href="#">
+            <div class="course-main">
+                <a href="../DrugInfo/adherence.html">
+                <div class="course-title">Importance of Adherence</div>
+                <p class="course-info">
+                    Adherence is crucial as it ensures consistency in actions or treatments, leading to better outcomes, whether in healthcare, discipline, or any other system.
+                </br></br>Click here to view more!
+                    
+                </p>
+                
+            </div>
+        </a>
+        </a>
+        </div>
+        <!-- top bar ends here -->
+
+        <!-- quizzes section starts here -->
+        <div class="quiz-bar">
+            <div class="quiz-title">Quizzes</div>
+            <div class="quiz-1">
+                <a href="../Quizzes/dbquiz.html">
+                    <img class="quiz-icons" src="../Images/img/vp.webp" />             
+                <div class="div-wrapper">
+                    <div class="database-text">Medication Knowledge Check</div>
+                </div>
+            </a>   
+            </div>
+
+        </div>
+        <!-- quizzes section ends here -->
+
+
+        <!-- tutorials section starts here -->
+        <div class="tutorial-bar">
+            <div class="tutorial-title">Drug Information</div>
+
+            <div class="div-2">
+                <a href="../DrugInfo/ibuprofen.html">
+                <img class="tutorial-icons" src="../Images/img/ibu.jpg" />
+                <div class="div-wrapper">
+                    <div class="mobile-text">Ibuprofen</div>
+                </div>
+            </a>
+            </div>
+
+            <div class="div-3">
+                <a href="../DrugInfo/Amoxicillin.html">
+                <img class="tutorial-icons" src="../Images/img/amo.jpg" />
+                <div class="div-wrapper">
+                    <div class="comp-arch-text">Amoxicillian</div>
+                </div>
+            </a>
+            </div>
+
+            <div class="div-4">
+                <a href="../DrugInfo/Metformin.html">
+                <img class="tutorial-icons" src="../Images/img/met.jpg" />
+                <div class="div-wrapper">
+                    <div class="sys-prog-text">Metformin</div>
+                </div>
+            </a>
+            </div>
+
+
+            <div class="extra"></div> <!-- extra space at the end of the last div -->
+
+        </div>
+        <!-- tutorials section ends here-->
+
+
+        <!-- live lectures section starts here -->
+        <div class="lecture-bar">
+            <div class="lecture-title"><h6>Educational Resources</h6></div>
+
+            <div class="div-2">
+                <a href="../LiveLectures/hci.html"><img class="lecture-icons" src="../Images/img/pan.jpeg" /> </a>
+                <div class="div-wrapper">
+                    <div class="hci-text">Teaching Kids about using medicine safely</div>
+                </div>
+            </div>
+
+            <div class="div-3">
+                <a href="../LiveLectures/web.html"><img class="lecture-icons" src="../Images/img/viag.webp" /></a>
+                <div class="div-wrapper">
+                    <div class="web-tech-text">Taking Medicine Correctly</div>
+                </div>
+            </div>
+
+            
+
+            <div class="div-4">
+                <a href="../LiveLectures/algo.html" target="_blank"><img class="lecture-icons" src="../Images/img/mag.jpg" /></a>
+                <div class="div-wrapper">
+                    <div class="algorithms-text">How to safely dispose of unused/expired medicine</div>
+                </div>
+            </div>
+
+
+            <div class="extra"></div> <!-- extra space at the end of the last div -->
+
+        </div>
+        <!-- live lectures sections ends here-->
+
+
+        <!-- footer starts here -->
+        <footer class="footer">
+            <div class="overlap">
+
+                
+                <p class="p">©2024PharmHub. All rights reserved</p>
+
+                <div class="terms-conditions">Terms & Conditions</div>
+                <div class="privacy-policy">Privacy Policy</div>
+                <div class="contact-us">Contact Us</div>
+
+                <div class="facebook">
+                    <a href="#"><img class="logo" src="../Images/img/facebook.png" /></a>
+                </div>
+
+                <div class="twitter">
+                    <a href="#"><img class="logo" src="../Images/img/twitter.png" /></a>
+                </div>
+
+                <div class="instagram">
+                    <a href="#"><img class="logo" src="../Images/img/instagram.png" /></a>
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer ends here -->
+
+    </div> <!-- course page ends here -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('.header .flex .nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Login Page</title> 
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightblue; /* Change to your preferred header color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 40px; /* Increased padding for a taller box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 400px; /* Increased width for the login box */
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'PlusJakartaSans-ExtraBold', sans-serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: blue; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: lightblue; /* Footer color */
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .people-clipart-digital-collage-4-1 {
+            height: 100px; /* Example height */
+            background: url('../path_to_your_image.jpg') no-repeat center center; /* Replace with your image path */
+            background-size: cover; /* Cover the area */
+            margin: 20px auto; /* Center image */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+           body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightblue; /* Change to your preferred header color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 40px; /* Increased padding for a taller box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 400px; /* Increased width for the login box */
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'PlusJakartaSans-ExtraBold', sans-serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: blue; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: lightblue; /* Footer color */
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .people-clipart-digital-collage-4-1 {
+            height: 100px; /* Example height */
+            background: url('../path_to_your_image.jpg') no-repeat center center; /* Replace with your image path */
+            background-size: cover; /* Cover the area */
+            margin: 20px auto; /* Center image */
+        }
+        }
+
+        @media (max-width: 480px) {
+            body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightblue; /* Change to your preferred header color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 40px; /* Increased padding for a taller box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 190px; /* Increased width for the login box */
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'PlusJakartaSans-ExtraBold', sans-serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: blue; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: lightblue; /* Footer color */
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .people-clipart-digital-collage-4-1 {
+            height: 100px; /* Example height */
+            background: url('../path_to_your_image.jpg') no-repeat center center; /* Replace with your image path */
+            background-size: cover; /* Cover the area */
+            margin: 20px auto; /* Center image */
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+        <div>
+            <a href="index.html" style="color: black;">WELCOME TO PHARMHUB</a>
+        </div>
+    </nav>
+</header>
+
+    <!--Sign in Form-->
+    <div class="form-container">
+        <h2>SIGN IN</h2>
+        <form id="loginForm" action="javascript:void(0);" onsubmit="loginRedirect()">
+            <input type="text" class="input-field" placeholder="Username" name="username" required>
+            <input type="password" class="input-field" placeholder="Password" name="password" required>
+            <button type="submit" class="button">Login</button>
+            <div><br/></div>
+            <a href="#">Forgot Password?</a>
+            <div><br/></div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PharmHub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function loginRedirect() {
+            // Redirecting to another page after successful login
+            window.location.href = "./Prototype/courses.html";
+        }
+    </script>
+
+</body>
+</html>

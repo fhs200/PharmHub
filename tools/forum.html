@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Forum - Share Experiences and Tips</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../Prototype/courses.html">Home</a></li>
+            <li><a href="#forum">Forum</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Patient Forum</h1>
+        <p>Share your experiences and tips with others!</p>
+    </header>
+
+    <main>
+        <!-- Forum Posts Section -->
+        <section class="forum-posts">
+            <h2>Community Posts</h2>
+
+            <!-- Example Forum Post -->
+            <article class="post">
+                <h3>Managing Daily Medication Routine</h3>
+                <p><strong>Posted by:</strong> Alice</p>
+                <p>I’ve found that setting multiple alarms really helps me keep track of my meds. Does anyone have other tips?</p>
+
+                <!-- Post Replies -->
+                <div class="replies">
+                    <div class="reply">
+                        <p><strong>John:</strong> I use a pill organizer box to sort my meds for the week, it’s super helpful!</p>
+                    </div>
+                    <div class="reply">
+                        <p><strong>Sarah:</strong> I agree with John! A weekly organizer saves me a lot of stress.</p>
+                    </div>
+                </div>
+
+                <!-- Add Reply Form -->
+                <form class="reply-form">
+                    <label for="reply">Add a Reply:</label>
+                    <textarea id="reply" rows="2" placeholder="Write your reply here..."></textarea>
+                    <button type="submit">Reply</button>
+                </form>
+            </article>
+
+            <!-- Additional Posts can go here -->
+        </section>
+
+        <!-- New Post Form -->
+        <section class="new-post">
+            <h2>Start a New Discussion</h2>
+            <form id="new-post-form">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="post-title" placeholder="Enter the title of your post" required>
+
+                <label for="post-content">Your Post:</label>
+                <textarea id="post-content" name="post-content" rows="4" placeholder="Share your experience or ask a question..." required></textarea>
+
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024PharmHub</p>
+    </footer>
+
+</body>
+</html>

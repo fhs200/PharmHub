@@ -1,0 +1,173 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color:  #fff;
+    color:black;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.nav a {
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.icons a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+    transition: filter 0.3s;
+}
+
+.icons a img:hover {
+    filter: brightness(0.8);
+}
+
+/* Main Article */
+.article-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    color: #2a879c;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.drug-info h3 {
+    font-size: 1.5rem;
+    color: #2a879c;
+    margin-top: 1.5rem;
+}
+
+.drug-info p {
+    margin: 0.5rem 0 1rem;
+}
+
+.side-effects ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.side-effects li {
+    margin: 0.5rem 0;
+}
+
+aside.resources {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9fc;
+    border-left: 4px solid #2a2a72;
+}
+
+aside.resources h3 {
+    font-size: 1.3rem;
+    color: #2a2a72;
+}
+
+aside.resources p {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color:#1f1f1f;
+    color: #fff;
+    padding: 1rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer .container {
+    flex-direction: column;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: #ff6b6b;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media .social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-bottom: 1rem;
+    }
+
+    .article-content {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

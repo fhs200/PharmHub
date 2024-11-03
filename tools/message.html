@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Messaging System</title>
+    <link rel="stylesheet" href="messageStyle.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../Prototype/courses.html">Home</a></li>
+            <li><a href="#messages">Messages</a></li>
+            <li><a href="#contact">Contact Provider</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Secure Messaging System</h1>
+        <p>Connect with your healthcare provider securely.</p>
+    </header>
+
+    <main>
+        <!-- Messages Section -->
+        <section id="messages">
+            <h2>Your Messages</h2>
+            <div class="message-list" id="message-list">
+                <!-- Example messages -->
+                <div class="message">
+                    <p><strong>From:</strong> Dr. Smith</p>
+                    <p><strong>Date:</strong> November 2, 2024</p>
+                    <p>Your appointment is confirmed for November 5, 2024.</p>
+                </div>
+                <div class="message">
+                    <p><strong>From:</strong> You</p>
+                    <p><strong>Date:</strong> November 1, 2024</p>
+                    <p>Can you please provide more details about my prescription?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compose Message Section -->
+        <section id="compose-message">
+            <h2>Compose a New Message</h2>
+            <form id="message-form">
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" placeholder="e.g., Dr. Smith" required>
+
+                <label for="message-subject">Subject:</label>
+                <input type="text" id="message-subject" placeholder="Subject of your message" required>
+
+                <label for="message-body">Message:</label>
+                <textarea id="message-body" rows="5" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024Pharmhub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for message handling -->
+    <script>
+        const messageForm = document.getElementById("message-form");
+        const messageList = document.getElementById("message-list");
+
+        messageForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const recipient = document.getElementById("recipient").value;
+            const subject = document.getElementById("message-subject").value;
+            const body = document.getElementById("message-body").value;
+
+            // Create a new message element
+            const newMessage = document.createElement("div");
+            newMessage.classList.add("message");
+            newMessage.innerHTML = `
+                <p><strong>From:</strong> You</p>
+                <p><strong>Date:</strong> ${new Date().toLocaleDateString()}</p>
+                <p><strong>To:</strong> ${recipient}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
+                <p>${body}</p>
+            `;
+            messageList.appendChild(newMessage);
+
+            // Clear the form inputs
+            messageForm.reset();
+        });
+    </script>
+</body>
+</html>

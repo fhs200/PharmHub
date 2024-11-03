@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pill Box Organizer</title>
+    <link rel="stylesheet" href="../tools/VPBstyle.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../Prototype/courses.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Virtual Pill Box Organizer</h1>
+        <p id="date-time"></p>
+    </header>
+
+    <main>
+        <section class="pill-box">
+            <h2>Today's Medications</h2>
+            <div class="pill-schedule">
+                <div class="pill-item">
+                    <h3>Morning (8:00 AM)</h3>
+                    <ul>
+                        <li>Aspirin - 100 mg</li>
+                        <li>Vitamin D - 500 IU</li>
+                    </ul>
+                    <button class="mark-taken">Mark as Taken</button>
+                </div>
+
+                <div class="pill-item">
+                    <h3>Afternoon (12:00 PM)</h3>
+                    <ul>
+                        <li>Metformin - 500 mg</li>
+                    </ul>
+                    <button class="mark-taken">Mark as Taken</button>
+                </div>
+
+                <div class="pill-item">
+                    <h3>Evening (6:00 PM)</h3>
+                    <ul>
+                        <li>Lisinopril - 20 mg</li>
+                    </ul>
+                    <button class="mark-taken">Mark as Taken</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-medication">
+            <h2>Add New Medication</h2>
+            <form id="medication-form">
+                <label for="medication-name">Medication Name:</label>
+                <input type="text" id="medication-name" name="medication-name" required>
+
+                <label for="dosage">Dosage (e.g., 500 mg):</label>
+                <input type="text" id="dosage" name="dosage" required>
+
+                <label for="schedule">Schedule:</label>
+                <select id="schedule" name="schedule" required>
+                    <option value="morning">Morning (8:00 AM)</option>
+                    <option value="afternoon">Afternoon (12:00 PM)</option>
+                    <option value="evening">Evening (6:00 PM)</option>
+                </select>
+
+                <button type="submit">Add Medication</button>
+            </form>
+        </section>
+
+        <section class="reminders">
+            <h2>Reminders</h2>
+            <div class="reminder-item">
+                <p>Take Metformin at 12:00 PM</p>
+                <button class="mark-done">Done</button>
+            </div>
+            <div class="reminder-item">
+                <p>Take Lisinopril at 6:00 PM</p>
+                <button class="mark-done">Done</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024PharmHub</p>
+    </footer>
+
+    <script>
+        // Script to display current date and time
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById("date-time").innerText = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>

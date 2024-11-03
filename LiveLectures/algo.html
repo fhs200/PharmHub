@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3c3969; /* Light background color */
+            font-family: 'DM Sans', Helvetica, sans-serif; /* Use the same font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+
+        header {
+            background-color: #11abdb; /* Dark background for the header */
+            color: rgb(99, 148, 220);
+            padding: 10px 20px;
+        }
+
+        .header .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: rgb(57, 93, 159);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .nav a.active {
+            font-weight: bold; /* Highlight active link */
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+            width: 100%;
+            max-width: 800px; /* Set maximum width */
+            margin: 20px auto; /* Center the video */
+            border: 10px solid white; /* Set border width and color */
+            box-sizing: border-box; /* Include border in total width */
+            background-color: #000; /* Set background color for the video area */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #333; /* Dark background for the footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header class="header">
+        <section class="flex">
+            <nav class="nav">
+                <a href="../Prototype/courses.html" class="active">Home</a>
+            </nav>
+        </section>
+    </header>
+    <!-- Header ends here -->
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/2kAklblMi24" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer starts here -->
+    <footer class="footer">
+        <div class="overlap">
+            <p class="p">©2024PharmHub</p>
+            <div class="terms-conditions">Terms & Conditions</div>
+            <div class="privacy-policy">Privacy Policy</div>
+            <div class="contact-us">Contact Us</div>
+            <div class="social-media">
+                <a href="#" class="facebook"><img class="logo" src="../Images/img/facebook.png" alt="Facebook Logo" /></a>
+                <a href="#" class="twitter"><img class="logo" src="../Images/img/twitter.png" alt="Twitter Logo" /></a>
+                <a href="#" class="instagram"><img class="logo" src="../Images/img/instagram.png" alt="Instagram Logo" /></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+</body>
+
+</html>

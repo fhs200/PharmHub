@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat Support</title>
+    <link rel="stylesheet" href="liveChatStyle.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../Prototype/courses.html">Home</a></li>
+            <li><a href="#chat">Live Chat</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Live Chat Support</h1>
+        <p>Get immediate assistance from our support team!</p>
+    </header>
+
+    <main>
+        <!-- Chat Window -->
+        <section class="chat-window">
+            <div class="messages" id="chat-messages">
+                <!-- Example messages -->
+                <div class="message support">
+                    <p><strong>Support:</strong> Hello! How can I assist you today?</p>
+                </div>
+                <div class="message user">
+                    <p><strong>You:</strong> I have a question about my medication schedule.</p>
+                </div>
+            </div>
+
+            <!-- Message Input Form -->
+            <form id="chat-form">
+                <input type="text" id="message-input" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024PharmHub</p>
+    </footer>
+
+    <!-- JavaScript to handle message submission -->
+    <script>
+        const chatForm = document.getElementById("chat-form");
+        const messageInput = document.getElementById("message-input");
+        const chatMessages = document.getElementById("chat-messages");
+
+        chatForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const userMessage = messageInput.value;
+
+            // Display the user message
+            const userMessageDiv = document.createElement("div");
+            userMessageDiv.classList.add("message", "user");
+            userMessageDiv.innerHTML = `<p><strong>You:</strong> ${userMessage}</p>`;
+            chatMessages.appendChild(userMessageDiv);
+
+            // Clear the input field
+            messageInput.value = "";
+
+            // Automatically scroll to the latest message
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Placeholder for sending message to server and getting a response
+            setTimeout(() => {
+                const supportMessageDiv = document.createElement("div");
+                supportMessageDiv.classList.add("message", "support");
+                supportMessageDiv.innerHTML = `<p><strong>Support:</strong> Thank you for your question. We're here to help!</p>`;
+                chatMessages.appendChild(supportMessageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

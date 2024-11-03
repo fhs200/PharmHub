@@ -1,0 +1,153 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #007acc;
+}
+
+#date-time {
+    font-size: 1.2em;
+    color: #555;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #007acc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.pill-schedule .pill-item, .reminders .reminder-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007acc;
+}
+
+.pill-item h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.pill-item ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.pill-item ul li {
+    margin: 5px 0;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+button.mark-taken, button.mark-done {
+    margin-top: 10px;
+}
+
+.add-medication form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-medication label {
+    margin: 5px 0 3px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-medication input, .add-medication select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Navigation Bar Styles */
+nav {
+    width: 100%;
+    background-color: #007acc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005f99;
+    border-radius: 4px;
+}
+
+/* Other existing styles from before */
